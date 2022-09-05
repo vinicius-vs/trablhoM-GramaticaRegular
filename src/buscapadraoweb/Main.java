@@ -52,7 +52,9 @@ public class Main {
     public static void main(String[] args) {
         //instancia e usa objeto que captura código-fonte de páginas Web
         CapturaRecursosWeb crw = new CapturaRecursosWeb();
-        crw.getListaRecursos().add("https://www.telenumeros.com/?dir=pesquisa&pesquisa=brusque");
+         //crw.getListaRecursos().add("https://www.telenumeros.com/?dir=pesquisa&pesquisa=brusque");
+        //crw.getListaRecursos().add("https://www.listapomerode.com.br/lista/lanchonete/");
+        crw.getListaRecursos().add("https://www.az-brasil.com/lista-telef%C3%B4nica/47-joinville_sc");
         ArrayList<String> listaCodigos = crw.carregarRecursos();
 
         String codigoHTML = listaCodigos.get(0);
